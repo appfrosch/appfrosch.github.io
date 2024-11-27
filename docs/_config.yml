@@ -25,11 +25,21 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://appfrosch.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  appfrosch
+mastodon:
+  - username: appfrosch
+    instance: iosdev.space
+author: Appfrosch
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# This defines the header link section–if removed, all the links will show alphabetically.
+# If in place, only the pages mentioned here will be available though …
+header_pages:
+  - apps.md
+  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
